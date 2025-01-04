@@ -9,7 +9,7 @@ document.getElementById('submitOrder').addEventListener('click', async () => {
     console.log(orderData);
 
     try {
-        const response = await fetch('http://localhost:5500/orders', {
+        const response = await fetch('https://wilfrid245.github.io/order/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
