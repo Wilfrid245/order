@@ -13,7 +13,7 @@ const PORT = 5500;
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://wilfrid245.github.io/sbc'],
+    origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://wilfrid245.github.io/order/'],
     methods: ['POST', 'GET', 'OPTIONS'],
     allowedHeaders: ['Content-Type'],
     credentials: true
