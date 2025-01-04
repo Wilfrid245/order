@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | LaFabrica | Unmatched Excellence | Student Business Club</title>
+    <link rel="stylesheet" href="order-style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="order-box" id="glow">
+    <h1><i>Order</i></h1>
+    <h4><i>It's free to order and only takes a minute</i></h4>
+    <form>
+    <label for="name" id="main-label"><i>Name</i></label>
+    <input type="text" id="name" placeholder="Name" class="input-text" required>
+    <label for="phone" id="main-label"><i>Phone Number</i></label>
+    <input type="text" id="tel" placeholder="Phone Number" class="input-text" required>
+    <label for="email" id="main-label"><i>Email (optional)</i></label>
+    <input type="email" id="email" placeholder="Email" class="input-text">
+    <label for="product" id="main-label"><i>Product</i></label>
+    <input type="text" value="Liquid Soap" class="input-text" id="product" readonly>
+    <label for="quantity" id="main-label"><i>Quantity</i></label>
+    <div class="radio-group">
+    <div>
+        <input type="radio" name="quantity" id="3Liters" value="3 Liters">
+        <label for="3Liters" class="label-radio">3 Liters</label>
+    </div>
+    <div>
+        <input type="radio" name="quantity" id="5Liters" value="5 Liters">
+        <label for="5Liters" class="label-radio">5 Liters</label>
+    </div>
+    <div>
+        <input type="radio" name="quantity" id="10Liters" value="10 Liters">
+        <label for="10Liters" class="label-radio">10 Liters</label>
+    </div>
+    <div>
+        <input type="radio" name="quantity" id="20Liters" value="20 Liters">
+        <label for="20Liters" class="label-radio">20 Liters</label>
+    </div>
+    </div>
+    <input type="button" value="Order" id="submitOrder">
+    </form>
+</div>
+
+<script src="order-script.js"></script>
+
+</body>
+
+</html>

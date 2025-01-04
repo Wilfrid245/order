@@ -1,0 +1,174 @@
+html {
+  height: 100%;
+  padding: 0;
+}
+body {
+  background-color: rgb(01, 153, 01);
+  font-family: "Poppins", sans-serif;
+  height: 98%;
+}
+
+.order-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#glow {
+  -webkit-animation: glow 10s ease-in-out infinite alternate;
+  -moz-animation: glow 10s ease-in-out infinite alternate;
+  animation: glow 10s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgb(57, 211, 57), 0 0 40px rgb(37, 211, 37), 0 0 60px rgb(7, 211, 7), 0 0 80px rgb(1, 153, 1), 0 0 90px #ffffff;
+  }
+
+  to {
+    box-shadow: 0 0 30px rgb(57, 211, 57), 0 0 50px rgb(37, 211, 37), 0 0 70px rgb(7, 211, 7), 0 0 90px rgb(1, 153, 1), 0 0 100px #ffffff;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+
+}
+
+form label {
+  display: inline-flex;
+  text-align: left;
+  font-weight: bolder;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+form label#main-label{
+  border-bottom: 2px solid rgb(1, 153, 1);
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+form input.input-text {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+
+
+input[type="button"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(01, 153, 01);
+  color: white;
+  font-size: 18px;
+}
+
+/* Add these new styles */
+.label-radio {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 600;  /* Override the bolder weight from form label */
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+/* Create a container for radio options */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Small mobile */
+@media (max-width: 340px) {
+  .order-box h4 {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .order-box {
+    width: 95%;
+  }
+}
+
+/* Tablet - Small */
+@media (min-width: 481px) and (max-width: 680px) {
+  .order-box {
+    width: 75%;
+  }
+}
+
+/* Tablet - Large */
+@media (min-width: 681px) and (max-width: 768px) {
+  .order-box {
+    width: 60%;
+  }
+}
+
+/* Desktop - Small */
+@media (min-width: 769px) and (max-width: 968px) {
+  .order-box {
+    width: 60%;
+  }
+}
+
+/* Desktop - Large */
+@media (min-width: 969px) and (max-width: 1024px) {
+  .order-box {
+    width: 60%;
+  }
+}
+
+/* Desktop - Large */
+@media (min-width: 1025px) and (max-width: 1310px) {
+  .order-box {
+    width: 50%;
+  }
+}
+
+/* Desktop - Large */
+@media (min-width: 1311px) {
+  .order-box {
+    width: 40%;
+  }
+}
+
